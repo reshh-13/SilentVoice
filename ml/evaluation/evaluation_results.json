@@ -1,0 +1,104 @@
+{
+  "dataset": "sid220/asl-now-fingerspelling",
+  "num_classes": 26,
+  "classes": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I",
+    "J",
+    "K",
+    "L",
+    "M",
+    "N",
+    "O",
+    "P",
+    "Q",
+    "R",
+    "S",
+    "T",
+    "U",
+    "V",
+    "W",
+    "X",
+    "Y",
+    "Z"
+  ],
+  "test_samples": 425,
+  "models": {
+    "random_forest": {
+      "accuracy": 0.9247058823529412,
+      "precision": 0.9256386766827942,
+      "recall": 0.9247058823529412,
+      "f1_score": 0.9239779521236193,
+      "latency_ms": 0.13418870813706343,
+      "size_kb": 12135.6494140625
+    },
+    "mlp_neural_network": {
+      "accuracy": 0.8658823529411764,
+      "precision": 0.8737510666957035,
+      "recall": 0.8658823529411764,
+      "f1_score": 0.866348238429727,
+      "latency_ms": 0.0,
+      "size_kb": 222.7578125
+    }
+  },
+  "winner": "Random Forest",
+  "top_confused_pairs": [
+    {
+      "true_class": "P",
+      "predicted_class": "Z",
+      "count": 4
+    },
+    {
+      "true_class": "U",
+      "predicted_class": "V",
+      "count": 4
+    },
+    {
+      "true_class": "V",
+      "predicted_class": "U",
+      "count": 3
+    },
+    {
+      "true_class": "Q",
+      "predicted_class": "G",
+      "count": 2
+    },
+    {
+      "true_class": "Z",
+      "predicted_class": "X",
+      "count": 2
+    },
+    {
+      "true_class": "A",
+      "predicted_class": "M",
+      "count": 1
+    },
+    {
+      "true_class": "E",
+      "predicted_class": "O",
+      "count": 1
+    },
+    {
+      "true_class": "G",
+      "predicted_class": "J",
+      "count": 1
+    },
+    {
+      "true_class": "G",
+      "predicted_class": "L",
+      "count": 1
+    },
+    {
+      "true_class": "J",
+      "predicted_class": "Y",
+      "count": 1
+    }
+  ]
+}

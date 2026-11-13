@@ -1,0 +1,12 @@
+{
+  "total_samples": 2122,
+  "valid_samples": 2122,
+  "invalid_samples": 0,
+  "rejected_reasons": {
+    "missing_label": 0,
+    "landmark_count_mismatch": 0,
+    "nan_or_inf": 0,
+    "zero_variance": 0
+  },
+  "validation_passed": true
+}

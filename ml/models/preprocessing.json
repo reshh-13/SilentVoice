@@ -1,0 +1,9 @@
+{
+  "version": "1.0",
+  "centering_landmark_index": 0,
+  "normalization_method": "max_euclidean_distance",
+  "input_landmarks": 21,
+  "coords_per_landmark": 3,
+  "feature_vector_size": 63,
+  "description": "Wrist-centered and max-distance scaled 3D hand coordinates."
+}
