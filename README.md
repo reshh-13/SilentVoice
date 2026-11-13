@@ -1,8 +1,47 @@
-# silent voice (SignSpeak-AI)
+# SilentVoice – Sign Language Translator
+*Breaking communication barriers, one sign at a time.*
 
-A real-time Sign Language Learning and Translation Platform that uses computer vision and deep learning models to translate signs into text and spoken audio.
+SilentVoice is an AI-powered sign language translation platform designed to bridge the communication gap between sign language users and non-signers. It uses computer vision and machine learning to recognize American Sign Language (ASL) fingerspelling gestures and convert them into text in real time.
 
-This workspace represents **Phase 1: Project Foundation & Design System**.
+## Features
+
+- **Real-Time Hand Tracking:** Detects hand landmarks using MediaPipe.
+- **ASL Recognition:** Recognizes fingerspelling gestures (A–Z) using a trained machine learning model.
+- **Live Translation:** Converts recognized signs into text.
+- **Text-to-Speech:** Converts translated text into speech.
+- **Translation History:** Keeps track of previous translations.
+- **Interactive Guide:** Provides visual references for learning ASL signs.
+- **Responsive UI:** Clean, modern interface with dark mode support.
+
+## Tech Stack
+
+- **Frontend:** Next.js 15, React, TypeScript, Tailwind CSS
+- **Computer Vision:** MediaPipe Tasks Vision
+- **Machine Learning:** Python, TensorFlow / MLP
+- **Backend:** FastAPI
+- **Authentication & Database:** Firebase (planned)
+
+## How It Works
+
+1. The webcam captures hand gestures.
+2. MediaPipe detects 21 hand landmarks.
+3. Landmark coordinates are preprocessed and normalized.
+4. The trained ML model predicts the corresponding ASL letter.
+5. Stable predictions are converted into text.
+
+## Project Status
+
+The frontend, real-time hand tracking, and ASL fingerspelling recognition pipeline have been implemented. Further improvements are planned for recognition accuracy, dynamic gestures, and additional language support.
+
+## Future Enhancements
+
+- Support for complete ASL words and sentences.
+- Improved recognition of dynamic gestures.
+- Multilingual translation.
+- Enhanced model accuracy and performance.
+
+
+**Phase 1: Project Foundation & Design System**.
 
 ## Project Architecture
 
@@ -33,37 +72,6 @@ SignSpeak-AI/ (silentvoice)
 - **Communication**: WebSockets
 - **AI Models & Processing**: OpenCV, MediaPipe Hands, TensorFlow (Phase 2 implementations)
 - **Database & Authentication**: Local SQLite persistence and local session authentication
-
-## Design & Color System
-
-Designed with a premium, clean aesthetic (inspired by Notion & Apple).
-
-- **Background**: `#F8F5F2` (Soft spacious sand)
-- **Primary Accent**: `#B08968` (Warm desert clay)
-- **Secondary Accent**: `#7F5539` (Deep chocolate brown)
-- **Text & Foreground**: `#2D2A26` (Off-black charcoal)
-- **Success Indicators**: `#6D9773` (Calm sage green)
-- **Error Indicators**: `#B56576` (Soft muted rose)
-
-## Reusable UI Components
-
-The foundation includes custom, highly polished UI primitives:
-- **Button**: Custom brand action button.
-- **Card**: Translucent glassmorphic container (`glass-card`).
-- **Input**: Tailwind inputs.
-- **Search Bar**: Centered header search input.
-- **Modal & Dialog**: Animated overlays.
-- **Badge**: Status indicators matching Success and Error colors.
-- **Progress Bar**: Animated spring loaders.
-- **Skeleton Loader & Loading Spinner**: Pulsing loading states.
-- **Toast**: Floating alert updates.
-- **Section Header**: Structured text layouts.
-
-## Getting Started
-
-### Prerequisites
-- Node.js 18+ (npm)
-- Python 3.12+
 
 ### Running the Frontend
 1. Navigate into the frontend folder:
